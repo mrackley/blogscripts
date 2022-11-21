@@ -1,0 +1,48 @@
+#Signature, #SignedCanvas
+{
+	border:thin black solid;
+}
+
+.SignatureDialogOverLay
+	{
+		font-size:large;
+		background-color: rgba(0,0,0,0.5);
+		display:none;
+		z-index:500;
+		width:      100%;
+		height:     100%; 
+		z-index:    10;
+		top:        0; 
+		left:       0; 
+		position:   fixed; 
+		text-align: center;
+		vertical-align: middle;
+	}
+	
+	.SignatureDialogOverLay:before {      /* create a full-height inline block pseudo-element */
+	    content: ' ';
+	    display: inline-block;
+	    vertical-align: middle; /* vertical alignment of the inline element */
+	    height: 100%;
+	    
+	}	
+	.SignatureDialog
+	{
+		margin: 0 auto;
+		display: inline-block;
+		vertical-align: middle;  	
+		background:white;	
+	}
+
+	.pt-pencil
+	{
+		position: absolute; 
+		bottom: 0;
+		right: 0;
+		cursor:pointer;
+	}
+
+	.pt-canvasContainer
+	{
+		position:relative;
+}
